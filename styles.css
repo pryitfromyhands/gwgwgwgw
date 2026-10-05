@@ -70,6 +70,43 @@ h1 {
     text-transform: lowercase;
 }
 
+.pricing {
+    max-width: 300px;
+    margin: -0.5rem auto 1rem;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0;
+    padding: 0.7rem 0;
+    text-align: left;
+}
+
+.price-row + .price-row {
+    border-top: 1px solid #222;
+}
+
+.price-row strong {
+    color: #fff;
+    font-weight: 400;
+}
+
+.price-row small,
+.access-note {
+    color: #777;
+    font-size: 0.75rem;
+}
+
+.access-note {
+    margin: 0 0 1.25rem;
+}
+
 .glow-link {
     display: inline-flex;
     align-items: center;
@@ -98,3 +135,4 @@ h1 {
         transition-duration: 0.01ms !important;
     }
 }
+
